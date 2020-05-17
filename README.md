@@ -16,7 +16,7 @@ catatan pribadi tentang command line git
 	+ berkontribusi pada repo orang lain
 	+ Fork != Clone
 
-##=== GIT command (LOCAL) ===
+## === GIT command (LOCAL) ===
  link : https://git-scm.com/book
 
 - 1. $ git init
@@ -36,7 +36,7 @@ catatan pribadi tentang command line git
 - working tree = folder repo project pada local pc
 - staging area = file yang sudah di  git add ke repo
 
-##==== tutorial membuat repositori git local / working tree ====
+## ==== tutorial membuat repositori git local / working tree ====
 - 1. pilih folder project 
 - 2. klik kanan kemudian pilih : git bash here
 - 3. ketik command : git init (agar folder menjadi repositori)
@@ -46,28 +46,28 @@ catatan pribadi tentang command line git
 - 2. git config --global user.email "you@example.com"
 - 3. git config --global user.name "Your Name"
 
-##=== cara commit file ===
+## === cara commit file ===
 - 1. pastikan file sudah di add staging (git add namafile)
 - 2. git status , cek status file, kalau nama file berwarna hijau maka sudah masuk staging
 - 3. git commit -m "tulis pesan"
 
-##== cara mengembalikan file yang sudah terhapus ==
+## == cara mengembalikan file yang sudah terhapus ==
 - 1. cari log histori ketika file tersebut di hapus 
 	contoh : git log -- style.css
 - 2. git checkout "5 digit pertama commit" -- namafile
 	contoh : git checkout  b315e -- style.css
 
-##=== membuat nama alias ==
+## === membuat nama alias ==
 - contoh membuat log graph
 - $ alias graph="git log --all --decorate --oneline --graph"
 cukup ketik $ graph untuk memanggil alias
 
-##=== membuat branch ===
+## === membuat branch ===
 - contoh membuat branch mahasiswa
 - $ git branch mahasiswa
 - $ git branch
 
-##=== pindah branch ===
+## === pindah branch ===
 - $ git checkout mahasiswa
 
 ## === cara merge branch ke branch  master ===
@@ -75,7 +75,7 @@ cukup ketik $ graph untuk memanggil alias
 - 2. $ git status : branch master harus hijau
 - 3. $ git merge mahasiswa
 
-##=== cara menghapus branch yang sudah di merge ===
+## === cara menghapus branch yang sudah di merge ===
 - 1. cek branch yang sudah di merge ke master : $ git branch --merged
 - 2. $ git branch -d mahasiswa
 
@@ -87,21 +87,21 @@ cukup ketik $ graph untuk memanggil alias
 - $ eval $(ssh-agent -s)
 - $ ssh-add ~/.ssh/danil
 
-##=== git --> github https / ssh ===
+## === git --> github https / ssh ===
 - 1. $ git clone masukan url_clone
 - 2. git remote
 - 3. git remote -v
 - 4. git config --global
 
-##=== cara push ke repo github ===
+## === cara push ke repo github ===
 - 1. git add .
 - 2. git commit -m "pesan"
 - 3. git push
 
-##=== cara update / menarik  project dari github ke local ===
+## === cara update / menarik  project dari github ke local ===
 - 1. $ git pull
 
-##== cara ganti email / user repo local ==
+## == cara ganti email / user repo local ==
 - cek git config = $ git config --list
 - 1. $ git config --global user.name "danil syah"
 - 2. $ git config --global user.email "danilsyaharihardjo@gmail.com"
